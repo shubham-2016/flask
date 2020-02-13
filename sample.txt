@@ -10,10 +10,8 @@ virtualenv flask_env  // In the flask directory
 source flask_env/bin/activate
 
 export FLASK_APP=flaskblog.py
-
-flask run
-
 export FLASK_DEBUG=1
+flask run
 
 which python
 which pip
