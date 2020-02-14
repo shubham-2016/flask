@@ -31,12 +31,12 @@
             <div class="collapse navbar-collapse" id="navbarToggle">
               <div class="navbar-nav mr-auto">
                 <a class="nav-item nav-link" href="/">Home</a>
-                <a class="nav-item nav-link" href="/about">About</a>
+                <a class="nav-item nav-link" href="{{ url_for('about') }}">About</a>
               </div>
               <!-- Navbar Right Side -->
               <div class="navbar-nav">
-                <a class="nav-item nav-link" href="/login">Login</a>
-                <a class="nav-item nav-link" href="/register">Register</a>
+                <a class="nav-item nav-link" href="{{ url_for('login') }}">Login</a>
+                <a class="nav-item nav-link" href="{{ url_for('register') }}">Register</a>
               </div>
             </div>
           </div>
@@ -61,11 +61,11 @@
                 <div class="content-container">
                     <h3>Our Sidebar</h3>
                     <p class="text-muted">You can put any information here you like</p>
-                    <ul>
-                        <li>Latest Post</li>
-                        <li>Announcement</li>
-                        <li>Calender</li>
-                        <li>Etc</li>
+                    <ul class="list-group">
+                      <li class="list-group-item list-group-item-light">Latest Post</li class="list-group">
+                      <li class="list-group-item list-group-item-light">Announcement</li class="list-group">
+                      <li class="list-group-item list-group-item-light">Calender</li class="list-group">
+                      <li class="list-group-item list-group-item-light">Etc</li class="list-group">
                     </ul>
                 </div>
             </div>
