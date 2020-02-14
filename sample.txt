@@ -29,4 +29,23 @@ pip3 install python-secrets
 >>> from os import urandom
 >>> urandom(16).hex()
 
+--------------------------------
 
+pip3 install flask-sqlalchemy
+
+from flaskblog import db
+
+db.create_all()
+
+from flaskblog import User,Post
+
+user_1 = User(username='shubham.yelne',email='shubham.yelne@neosofttech.com',password='password', image_file="abc")
+
+user_2 = User(username='rahul.shingate',email='rahul.shingate@neosofttech.com',password='password')
+
+db.session.add(user_1,user_2)
+
+
+flaskblog
+
+user_1 = User(username='shubham.yelne',password='password')
